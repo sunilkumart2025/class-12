@@ -65,11 +65,33 @@
             padding: 10px 0;
             margin-top: 20px;
         }
+
+        /* Updated button styling */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+        }
+        button:active {
+            background-color: #388e3c;
+            transform: translateY(1px);
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png.webp" alt="Knowledge Nexus 12 Logo">
+        <img src="logo.png" alt="Knowledge Nexus 12 Logo">
         <h1>Knowledge Nexus 12</h1>
         <p>Your one-stop solution for notes and practice tests!</p>
     </header>
@@ -87,11 +109,8 @@
         <div class="section" id="practice-tests">
             <h2>Practice Tests</h2>
             <p>Test your knowledge with interactive quizzes and mock exams.</p>
-            <a href="practice-tests.html">
-                <button>Take a Test</button>
-            </a>
+            <button onclick="alert('Practice tests coming soon!')">Take a Test</button>
         </div>
-        
         <div class="section" id="about">
             <h2>About</h2>
             <p>This site is specially created for Class 12 students to make studying easier and more effective.</p>
